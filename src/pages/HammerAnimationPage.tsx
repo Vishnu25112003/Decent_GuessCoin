@@ -150,7 +150,7 @@ export default function HammerAnimationPage() {
   }
 
   return (
-    <div className="min-h-screen relative bg-cyber-darker overflow-hidden">
+    <div className="min-h-screen relative bg-cyber-darker">
       <HexGrid />
       <Scanlines />
       <Header
@@ -202,9 +202,9 @@ export default function HammerAnimationPage() {
         </motion.div>
 
         {/* Main Animation Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative">
+        <div className="flex flex-col lg:flex-row gap-12 relative min-h-screen">
           {/* LEFT: PREDICTION HAMMERS */}
-          <div className="space-y-6">
+          <div className="lg:w-1/2 flex-shrink-0 overflow-y-auto lg:min-h-screen space-y-6">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -250,7 +250,7 @@ export default function HammerAnimationPage() {
           </div>
 
           {/* RIGHT: TREASURY BOXES */}
-          <div className="space-y-6">
+          <div className="lg:w-1/2 flex-shrink-0 lg:h-screen lg:sticky lg:top-0 space-y-6">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
