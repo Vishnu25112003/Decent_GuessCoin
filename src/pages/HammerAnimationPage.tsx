@@ -250,7 +250,7 @@ export default function HammerAnimationPage() {
           </div>
 
           {/* RIGHT: TREASURY BOXES */}
-          <div className="lg:w-1/2 flex-shrink-0 lg:h-screen lg:sticky lg:top-0 space-y-6">
+          <div className="lg:w-1/2 flex-shrink-0 lg:h-screen lg:sticky lg:top-[4.5rem] space-y-6">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
